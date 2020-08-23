@@ -1,0 +1,80 @@
+body{
+    display: grid;
+    background-color: #07031a;
+    margin: 20px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template:
+    "navbar navbar"
+    "header header"
+    "alerta alerta"
+    "listaProductos CarritodeCompras"
+    "vacio total";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,2fr 0,5fr 0,3fr 5fr 0,3fr;
+    height: 100vh;
+}
+
+.navbar{
+    grid-area: navbar;
+    
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    background-color:#24a19c ;
+    padding: 2px;
+    color:  #fbd46d;
+    margin-top: 10px;
+} 
+
+.alert{
+    grid-area: alerta;
+    float: inline-end;
+    margin-top: 10px;
+    background-color:#f4f6ff;
+       
+}
+.ListadeProductos{
+    grid-area: listaProductos;
+    background-color: #4f8a8b;
+    border: 2px;
+    padding-top: 10px;
+    border-color: lightseagreen;
+    border-style: solid;
+    text-align: center;
+    color: #ffc7c7;
+    
+}
+
+.CarritodeCompras{
+    grid-area: CarritodeCompras;
+    background-color: #4f8a8b;
+    margin-left: 20px;
+    border: 2px;
+    padding-top: 10px;
+    border-color: lightseagreen;
+    border-style: solid;
+    text-align: center;
+    color: #ffc7c7;
+}
+
+.Finalizar{
+    grid-area: total;
+    background-color:#519872;
+    margin-left: 20px;
+    margin-top: 5px;
+    float: right;
+    padding: 5px;
+    color: #fbd46d;
+    text-align: center ;
+}
+
+.imagen{
+    width: 100px; 
+    height: 100px;
+    margin-top: 5px;
+}
